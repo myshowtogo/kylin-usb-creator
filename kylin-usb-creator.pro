@@ -57,10 +57,11 @@ PKGCONFIG += gsettings-qt
 TRANSLATIONS += src/translations/kylin-usb-creator_zh_CN.ts \
                 src/translations/kylin-usb-creator_bo_CN.ts
 
+# todo : openEuler下安装至opt目录，屏蔽之后正常
 # Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+# qnx: target.path = /tmp/$${TARGET}/bin
+# else: unix:!android: target.path = /opt/$${TARGET}/bin
+# !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += data.qrc translations.qrc
 
