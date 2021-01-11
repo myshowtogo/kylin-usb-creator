@@ -14,7 +14,6 @@ cp -r $pkg_name-fork/ $pkg_name-$version/
 tar -zcvf $pkg_name-$version.tar.gz $pkg_name-$version/
 cp $pkg_name-$version.tar.gz /root/rpmbuild/SOURCES/
 rm -rf $pkg_name-$version/
-mv $pkg_name-$version.tar.gz $pkg_name-fork/openEuler
 echo "编译源码包"
 cd /root/rpmbuild/RPMS/x86_64/
 rm $pkg_name*.x86_64.rpm

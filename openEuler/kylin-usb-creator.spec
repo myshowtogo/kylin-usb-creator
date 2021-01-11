@@ -48,4 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Dec 15 2020 lvhan <lvhan@kylinos.cn> - 1.0.0-1
-- update to upstream version 1.0.0
+- update to upstream version 1.0.0-26kord
